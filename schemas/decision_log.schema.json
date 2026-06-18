@@ -1,0 +1,14 @@
+{
+  "$schema":"http://json-schema.org/draft-07/schema#",
+  "title":"decision log",
+  "type":"object",
+  "required":["decisions","measured","pass_all"],
+  "properties":{
+    "spec_meta":{"type":"object"},
+    "decisions":{"type":"object","required":["typeface","base_text","canon","measure","leading","alignment","gray_value"],
+      "additionalProperties":{"type":"string","minLength":8}},
+    "measured":{"type":"object"},
+    "evidence_metrics":{"type":"object"},
+    "pass_all":{"type":"boolean"}
+  }
+}

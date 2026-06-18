@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <!-- tileable lozenge unit; repeat into a band or border -->
+  <path d="M12 3 L21 12 L12 21 L3 12 Z" fill="none" stroke="#a8322a" stroke-width="1"/>
+  <path d="M12 8 L16 12 L12 16 L8 12 Z" fill="#a8322a"/>
+</svg>

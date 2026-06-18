@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "山居秋暝 · 王维",
+    "genre": "诗",
+    "lang": "zh-Hans",
+    "source": "唐诗（公有领域）",
+    "study_note": "参照原书排诗之法：不两端对齐，行距偏宽，按句断行，余白即节奏。参数为我方提炼，非照搬原书。"
+  },
+  "page": {
+    "w_mm": 148,
+    "h_mm": 210
+  },
+  "dpi": 240,
+  "canon": {
+    "type": "van_de_graaf",
+    "page_side": "recto"
+  },
+  "base_text": {
+    "size_Q": 15,
+    "leading_ratio": 2.2,
+    "cjk_weight": "Regular"
+  },
+  "heading": {
+    "text": "山居秋暝",
+    "size_pt": 18,
+    "align": "center",
+    "lines_below": 3
+  },
+  "body": [
+    "空山新雨后",
+    "天气晚来秋",
+    "明月松间照",
+    "清泉石上流"
+  ],
+  "first_line_indent_chars": 0,
+  "justify": false,
+  "para_gap_lines": 0,
+  "folio": 7,
+  "ink_rgb": [
+    22,
+    20,
+    17
+  ]
+}

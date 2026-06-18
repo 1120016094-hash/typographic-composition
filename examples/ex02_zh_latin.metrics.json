@@ -1,0 +1,24 @@
+{
+  "ink_density": 0.0728,
+  "gray_value_cv": 0.2331,
+  "tile_min": 0.0001,
+  "tile_max": 0.105,
+  "river_channels": 0,
+  "widest_river_px": 6,
+  "canon_ratio_actual": "1.0:1.51:2.06:2.71",
+  "canon_ratio_intended": "1.0:1.42:2.07:2.97",
+  "canon_match": true,
+  "measure_chars": 30,
+  "lines_per_page": 24,
+  "overflow_paragraphs": 0,
+  "verdict": {
+    "gray_even": true,
+    "density_ok": true,
+    "no_rivers": true,
+    "canon_ok": true,
+    "measure_ok": true,
+    "no_overflow": true
+  },
+  "profile": "body",
+  "pass_all": true
+}

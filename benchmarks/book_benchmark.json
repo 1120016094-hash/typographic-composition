@@ -1,0 +1,94 @@
+{
+  "_README": "DERIVED NUMERIC STANDARD from the original book. No page images or annotation text are stored here. Measured on a clean CENTRAL crop of single-column body pages (spine/edge/folio/heading excluded) and density-filtered to running body text. gray_value_cv is the primary transferable target (灰度均匀). Margin/canon ratios are NOT auto-derived from scans (too noisy); set canon explicitly per design. Re-run derive_benchmark.py on your local book to extend.",
+  "label": "白井《排版造型》单栏正文页（中央裁切）",
+  "n_body_pages": 5,
+  "dpi": 150,
+  "pages_used": [
+    42,
+    43,
+    60,
+    79,
+    151
+  ],
+  "pages_skipped_by_density": [
+    [
+      44,
+      0.467
+    ],
+    [
+      78,
+      0.07
+    ],
+    [
+      152,
+      0.817
+    ],
+    [
+      263,
+      0.301
+    ],
+    [
+      264,
+      0.373
+    ],
+    [
+      267,
+      0.329
+    ],
+    [
+      268,
+      0.356
+    ],
+    [
+      269,
+      0.366
+    ]
+  ],
+  "gray_value_cv": {
+    "median": 0.3996,
+    "p25": 0.3319,
+    "p75": 0.4646,
+    "min": 0.2769,
+    "max": 0.5078
+  },
+  "ink_density": {
+    "median": 0.0989,
+    "p25": 0.0812,
+    "p75": 0.1053,
+    "min": 0.0795,
+    "max": 0.1345
+  },
+  "per_page": [
+    {
+      "page": 42,
+      "gray_value_cv": 0.4646,
+      "ink_density": 0.1053
+    },
+    {
+      "page": 43,
+      "gray_value_cv": 0.5078,
+      "ink_density": 0.0989
+    },
+    {
+      "page": 60,
+      "gray_value_cv": 0.2769,
+      "ink_density": 0.1345
+    },
+    {
+      "page": 79,
+      "gray_value_cv": 0.3996,
+      "ink_density": 0.0812
+    },
+    {
+      "page": 151,
+      "gray_value_cv": 0.3319,
+      "ink_density": 0.0795
+    }
+  ],
+  "derived_bands": {
+    "gray_value_cv_pass": 0.4646,
+    "gray_value_cv_shirai": 0.3996,
+    "ink_density_lo": 0.0802,
+    "ink_density_hi": 0.1228
+  }
+}

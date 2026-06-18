@@ -1,0 +1,160 @@
+{
+  "_README": "Maps the typefaces Shirai recommends (which are licensed/commercial and cannot be bundled) to open-source substitutes chosen for the closest possible 骨架/平衡/字宽/灰度. 'file'+'index' are resolved at runtime; 'status' = present|missing. Run scripts/check_fonts.py to verify on the host. NEVER bundle a commercial face; only OFL/open faces go in this folder.",
+  "roles": {
+    "cjk_serif_body": {
+      "role_cn": "明朝体／宋体 · 正文本位",
+      "shirai_refs": [
+        "秀英明朝",
+        "本明朝",
+        "游明朝",
+        "筑地体系"
+      ],
+      "substitute": "Noto Serif CJK SC (= Source Han Serif SC)",
+      "license": "SIL OFL 1.1",
+      "file": "/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc",
+      "index": 2,
+      "weights": {
+        "ExtraLight": [
+          "/usr/share/fonts/opentype/noto/NotoSerifCJK-ExtraLight.ttc",
+          2
+        ],
+        "Light": [
+          "/usr/share/fonts/opentype/noto/NotoSerifCJK-Light.ttc",
+          2
+        ],
+        "Regular": [
+          "/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc",
+          2
+        ],
+        "Medium": [
+          "/usr/share/fonts/opentype/noto/NotoSerifCJK-Medium.ttc",
+          2
+        ],
+        "SemiBold": [
+          "/usr/share/fonts/opentype/noto/NotoSerifCJK-SemiBold.ttc",
+          2
+        ],
+        "Bold": [
+          "/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc",
+          2
+        ],
+        "Black": [
+          "/usr/share/fonts/opentype/noto/NotoSerifCJK-Black.ttc",
+          2
+        ]
+      },
+      "status": "present",
+      "note": "Source Han Serif is the closest open Mincho to 秀英/本明朝. Use Regular for body; reserve Medium/SemiBold for emphasis, never Bold for CJK running text."
+    },
+    "cjk_serif_tc": {
+      "role_cn": "繁体正文",
+      "substitute": "Noto Serif CJK TC",
+      "license": "SIL OFL 1.1",
+      "file": "/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc",
+      "index": 3,
+      "status": "present"
+    },
+    "japanese_serif": {
+      "role_cn": "日文正文（明朝）",
+      "substitute": "Noto Serif CJK JP",
+      "license": "SIL OFL 1.1",
+      "file": "/usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc",
+      "index": 0,
+      "status": "present"
+    },
+    "cjk_sans": {
+      "role_cn": "黑体／ゴシック · 标题、图注、强调",
+      "shirai_refs": [
+        "秀英黑体",
+        "石井中黑体",
+        "Ryobi 黑体"
+      ],
+      "substitute": "Noto Sans CJK SC (= Source Han Sans SC)",
+      "license": "SIL OFL 1.1",
+      "file": "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+      "index": 2,
+      "weights": {
+        "DemiLight": [
+          "/usr/share/fonts/opentype/noto/NotoSansCJK-DemiLight.ttc",
+          2
+        ],
+        "Regular": [
+          "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
+          2
+        ],
+        "Medium": [
+          "/usr/share/fonts/opentype/noto/NotoSansCJK-Medium.ttc",
+          2
+        ],
+        "Bold": [
+          "/usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc",
+          2
+        ]
+      },
+      "status": "present"
+    },
+    "latin_serif_body": {
+      "role_cn": "拉丁正文／与中文并置的西文",
+      "shirai_refs": [
+        "Garamond",
+        "Sabon",
+        "Dante",
+        "Arrighi",
+        "Centaur"
+      ],
+      "license": "SIL OFL 1.1 (see EBGaramond-OFL-License.txt)",
+      "file": "EBGaramond-Regular.ttf",
+      "index": 0,
+      "status": "present",
+      "also_recommended": [
+        "Cormorant Garamond (OFL)",
+        "Source Serif 4 (OFL)",
+        "Crimson Pro (OFL)"
+      ],
+      "substitute": "EB Garamond (OFL) — installed",
+      "weights": {
+        "Regular": [
+          "EBGaramond-Regular.ttf",
+          0
+        ],
+        "Italic": [
+          "EBGaramond-Italic.ttf",
+          0
+        ],
+        "Medium": [
+          "EBGaramond-Medium.ttf",
+          0
+        ],
+        "SemiBold": [
+          "EBGaramond-SemiBold.ttf",
+          0
+        ],
+        "Bold": [
+          "EBGaramond-Bold.ttf",
+          0
+        ]
+      },
+      "note": "EB Garamond ~ Garamond/Sabon 气质，作正文拉丁与中西并置。CJK 正文仍用 Noto Serif CJK。"
+    },
+    "latin_titling": {
+      "role_cn": "拉丁标题／大写排布",
+      "shirai_refs": [
+        "Felix Titling",
+        "Trajan"
+      ],
+      "substitute_preferred": "Cinzel (OFL) — NOT installed; user must add",
+      "substitute_fallback": "DejaVu Serif caps",
+      "status": "present",
+      "action_required": "Add Cinzel (OFL) for Roman-capital titling.",
+      "substitute": "EB Garamond SemiBold (acceptable) — Cinzel optional",
+      "file": "EBGaramond-SemiBold.ttf",
+      "index": 0,
+      "note": "无专门罗马大写 titling 字时，用 EB Garamond SemiBold 大写排布；如需更正统罗马碑刻味，可补 Cinzel(OFL)。"
+    }
+  },
+  "selection_table_ref": "../../reference/02-typeface-selection.md",
+  "gaps_summary": [
+    "latin_titling: 可选补 Cinzel(OFL) 以获更正统罗马大写；当前用 EB Garamond SemiBold 替代，已可用。",
+    "更细的明朝变体（秀英/本明朝）需商业授权，开源 skill 不含。"
+  ]
+}

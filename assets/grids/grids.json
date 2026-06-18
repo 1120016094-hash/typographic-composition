@@ -1,0 +1,5 @@
+{
+  "book_essay_30x24": {"measure_chars":30,"lines":24,"columns":1,"desc":"A5 随笔单栏"},
+  "album_2col":       {"columns":2,"col_split":"2/4","desc":"画册双栏，图文关系"},
+  "catalog_4col":     {"columns":4,"col_split":"1/4","desc":"图录四栏，密集条目"}
+}

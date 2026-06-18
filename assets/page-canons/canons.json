@@ -1,0 +1,5 @@
+{
+  "van_de_graaf": {"type":"van_de_graaf","desc":"九分法；内:上:外:下 = 2:3:4:6 传统的构造来源；版心偏上偏内"},
+  "golden_2346":  {"type":"explicit_ratio","ratio":[2,3,4,6],"desc":"内:上:外:下 = 2:3:4:6（黄金/古典正典）"},
+  "modern_even":  {"type":"explicit","inner_mm":18,"top_mm":18,"outer_mm":18,"bottom_mm":22,"desc":"现代均衡，底略大"}
+}

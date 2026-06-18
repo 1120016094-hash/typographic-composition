@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "typographic-composition spec",
+  "type": "object",
+  "required": ["page", "base_text", "body"],
+  "properties": {
+    "meta": {"type":"object","properties":{
+      "title":{"type":"string"},"genre":{"type":"string"},"lang":{"type":"string"},"source":{"type":"string"}}},
+    "page": {"type":"object","required":["w_mm","h_mm"],
+      "properties":{"w_mm":{"type":"number"},"h_mm":{"type":"number"}}},
+    "dpi": {"type":"integer","minimum":120,"maximum":600},
+    "canon": {"type":"object","properties":{"type":{"enum":["van_de_graaf","explicit"]},
+      "page_side":{"enum":["recto","verso"]},
+      "inner_mm":{"type":"number"},"outer_mm":{"type":"number"},
+      "top_mm":{"type":"number"},"bottom_mm":{"type":"number"}}},
+    "base_text": {"type":"object",
+      "properties":{"size_Q":{"type":"number"},"size_pt":{"type":"number"},
+      "leading_ratio":{"type":"number"},"leading_pt":{"type":"number"},
+      "cjk_weight":{"type":"string"}}},
+    "heading": {"type":"object","properties":{"text":{"type":"string"},
+      "size_pt":{"type":"number"},"align":{"enum":["center","left"]},"lines_below":{"type":"integer"}}},
+    "body": {"oneOf":[{"type":"string"},{"type":"array","items":{"type":"string"}}]},
+    "first_line_indent_chars": {"type":"number"},
+    "para_gap_lines": {"type":"integer"},
+    "folio": {"type":["integer","string"]},
+    "ink_rgb": {"type":"array","items":{"type":"integer"},"minItems":3,"maxItems":3}
+  }
+}

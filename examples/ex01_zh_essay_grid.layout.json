@@ -1,0 +1,32 @@
+{
+  "profile": "body",
+  "page_mm": [
+    148,
+    210
+  ],
+  "dpi": 240,
+  "base_text": {
+    "size_pt": 9.213,
+    "leading_pt": 7.37,
+    "leading_ratio": 1.8
+  },
+  "canon": "van_de_graaf",
+  "margins_mm": {
+    "inner": 16.44,
+    "top": 23.33,
+    "outer": 34.06,
+    "bottom": 48.87
+  },
+  "margin_ratio_in_top_out_bot": "1.0:1.42:2.07:2.97",
+  "measure_chars": 30,
+  "lines_per_page": 24,
+  "type_area_mm": [
+    97.5,
+    137.8
+  ],
+  "overflow_paragraphs": 0,
+  "outputs": {
+    "png": "ex01_zh_essay_grid.png",
+    "pdf": "ex01_zh_essay_grid.pdf"
+  }
+}
