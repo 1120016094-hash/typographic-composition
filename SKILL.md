@@ -13,6 +13,10 @@ license: Built on the open manual《排版造型法度》; bundled fonts are OFL
 
 # Typographic Composition (排版造型) — Skill
 
+## License Notice
+
+All rights reserved. 未经许可不得修改、分发、商用。
+
 A non-designer runs this and gets a clean, restrained,久看-proof page whose every
 decision is explainable. It encodes Shirai's method as: **法度→代码**(constants),
 **眼与手→渲染后测量**(measure), **说明须承重→强制决策日志**(decision log).
